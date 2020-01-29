@@ -1,1 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace perem_obyavl
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            //Основные типы: int, uint | float | char | string
+
+            // Целочисленные 
+            byte peremTipaByte; // 0 255
+            sbyte peremTipaSbyte; //-128  127
+            short peremTipaShort;// -32768  32767
+            ushort peremTipaUshort; // 0  65535
+            int peremTipaInt; // -2147483648  2147483647  
+            uint peremTipaUint; //0  4294967295
+            long peremTipaLong;
+            ulong peremTipaUlong;
+
+            //Числа с плавающей точкой
+            float peremTipaFloat; // 7 знаков после запятой
+            double peremTipaDouble; // 15 знаков после запятой
+
+            // символьный тип
+            char peremTipaChar;
+
+            //строковые
+            string stroka;
+
+            // логические переменные
+            bool logichVyrazhenie; //либо true, либо false
+
+        }
+    }
+}
