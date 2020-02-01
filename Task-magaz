@@ -1,0 +1,19 @@
+
+int amountGold;
+int countCrystal;
+int priceCrystal = 5;
+bool enoughAmountGold;
+
+Console.Write("Сколько у Вас золота?: ");
+amountGold = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Сколько кристаллов Вы желаете приобрести?: ");
+countCrystal = Convert.ToInt32(Console.ReadLine());
+
+enoughAmountGold = amountGold >= countCrystal * priceCrystal;
+countCrystal *=  Convert.ToInt32(enoughAmountGold);
+
+amountGold -= priceCrystal * countCrystal;
+
+Console.WriteLine($"Вы приобрели {countCrystal} кристаллов.\n" +
+    $"Оставшееся количество золота: {amountGold}.");
