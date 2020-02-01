@@ -1,0 +1,17 @@
+string name, zodiac, workingPlace;
+int age;
+
+Console.Write("Как Вас зовут?: ");
+name = Console.ReadLine();
+
+Console.Write("Сколько Вам лет?: ");
+age = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Кто Вы по знаку зодиака?: ");
+zodiac = Console.ReadLine();
+
+Console.Write("Место работы: ");
+workingPlace = Console.ReadLine();
+
+Console.WriteLine($"Вас зовут {name}, Вам {age} год, Вы {zodiac} и " +
+    $"Ваше место работы {workingPlace}");
