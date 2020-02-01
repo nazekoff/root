@@ -1,0 +1,11 @@
+int pictures = 52;
+int countPicturesInRow = 3;
+
+int countOfFullRow;
+int countRemainderOfPic;
+
+countOfFullRow = pictures / countPicturesInRow;
+countRemainderOfPic = pictures % countPicturesInRow;
+
+Console.WriteLine($"Число заполненных рядов: {countOfFullRow} \n" +
+    $"Число картинок сверхмеры: {countRemainderOfPic}");
