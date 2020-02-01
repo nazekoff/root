@@ -1,0 +1,14 @@
+int amountOldWoman;
+int timeReceptionOneOldWoman = 10; //minutes
+
+int hourWaitingTime;
+int minuteWaitingTime;
+
+Console.Write("Введите количество старушек в очереди: ");
+amountOldWoman = Convert.ToInt32(Console.ReadLine());
+
+hourWaitingTime = amountOldWoman * timeReceptionOneOldWoman / 60;
+minuteWaitingTime = amountOldWoman * timeReceptionOneOldWoman % 60;
+
+Console.WriteLine($"Вы должны отстоять в очереди {hourWaitingTime} часа " +
+  $"и {minuteWaitingTime} минут.");
